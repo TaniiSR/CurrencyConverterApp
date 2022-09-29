@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="App.Widget.TextView.Black" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">@style/App.TextAppearance.TextView</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?attr/cuBlackColor</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="App.TextAppearance.TextView" parent="">
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="font">@font/roboto_regular</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:font" tools:targetApi="o">@font/roboto_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="App.Widget.TextView.Grey" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">@style/App.TextAppearance.TextView</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?attr/cuGreyTextColor</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="App.Widget.TextView.BlackColor.XLarge" parent="App.Widget.TextView.Black">
+        <item name="android:textSize">@dimen/cu_text_size_h3</item>
+    </style>
+
+    <style name="App.Widget.TextView.BlackColor.Large" parent="App.Widget.TextView.Black">
+        <item name="android:textSize">@dimen/cu_text_size_h5</item>
+    </style>
+
+    <style name="App.Widget.TextView.BlackColor.Medium" parent="App.Widget.TextView.Black">
+        <item name="android:textSize">@dimen/cu_text_size_h6</item>
+    </style>
+
+    <style name="App.Widget.TextView.BlackColor.Small" parent="App.Widget.TextView.Black">
+        <item name="android:textSize">@dimen/cu_text_size_h7</item>
+    </style>
+
+    <style name="App.Widget.TextView.BlackColor.XSmall" parent="App.Widget.TextView.Black">
+        <item name="android:textSize">@dimen/cu_text_size_h8</item>
+    </style>
+
+
+    <style name="App.Widget.TextView.GreyColor.XLarge" parent="App.Widget.TextView.Grey">
+        <item name="android:textSize">@dimen/cu_text_size_h3</item>
+    </style>
+
+    <style name="App.Widget.TextView.GreyColor.Large" parent="App.Widget.TextView.Grey">
+        <item name="android:textSize">@dimen/cu_text_size_h5</item>
+    </style>
+
+    <style name="App.Widget.TextView.GreyColor.Medium" parent="App.Widget.TextView.Grey">
+        <item name="android:textSize">@dimen/cu_text_size_h6</item>
+    </style>
+
+    <style name="App.Widget.TextView.GreyColor.Small" parent="App.Widget.TextView.Grey">
+        <item name="android:textSize">@dimen/cu_text_size_h7</item>
+    </style>
+
+    <style name="App.Widget.TextView.GreyColor.XSmall" parent="App.Widget.TextView.Grey">
+        <item name="android:textSize">@dimen/cu_text_size_h8</item>
+    </style>
+</resources>

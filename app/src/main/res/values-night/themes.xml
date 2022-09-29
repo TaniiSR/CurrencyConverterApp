@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.App" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/cuBlueWithAHintOfPurple</item>
+        <item name="colorPrimaryVariant">@color/cuBlueWithAHintOfPurpleTwo</item>
+        <item name="colorOnPrimary">@color/cuBlack</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/cuTeal200</item>
+        <item name="colorSecondaryVariant">@color/cuTeal700</item>
+        <item name="colorOnSecondary">@color/cuBlack</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimaryDark">@color/cuDarkSlateBlue</item>
+        <item name="android:colorBackground">@color/cuBlack</item>
+
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">false</item>
+        <item name="android:layoutDirection">ltr</item>
+
+        <!-- Start new activity animation slide in and slide out  -->
+        <item name="android:windowAnimationStyle">@style/AppCustomActivityAnimation</item>
+        <!-- Text Colors -->
+        <item name="prefixTextColor">@color/cuBlueWithAHintOfPurpleFaded</item>
+        <item name="hintTextColor">@color/cuBlueGrey</item>
+        <item name="cuGreyTextColor">@color/cuGreyLight</item>
+        <item name="cuWhiteColor">@color/cuBlack</item>
+        <item name="cuBlackColor">@color/cuWhite</item>
+    </style>
+
+    <style name="AppCustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <!-- specify enter and exit transitions -->
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+</resources>
